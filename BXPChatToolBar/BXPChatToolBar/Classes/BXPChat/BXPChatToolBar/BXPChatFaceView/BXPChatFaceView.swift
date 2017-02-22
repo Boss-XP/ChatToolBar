@@ -91,7 +91,7 @@ class BXPChatFaceView: UIView, UICollectionViewDelegate, UICollectionViewDataSou
         let sendButton = UIButton(frame: CGRect(x: UIScreen.main.bounds.size.width - width, y: 0, width: width, height: height))
         sendButton.setTitle("发送", for: UIControlState.normal)
         sendButton.setTitleColor(UIColor.white, for: UIControlState.normal)
-        sendButton.backgroundColor = UIColor(red: 0/255.0, green: 198/255.0, blue: 129/255.0, alpha: 1.0)//UIColor.green
+        sendButton.backgroundColor = UIColor(red: 0/255.0, green: 198/255.0, blue: 129/255.0, alpha: 1.0)
         sendButton.addTarget(self, action: #selector(self.sendButtonClicked), for: UIControlEvents.touchUpInside)
         bottomView.addSubview(sendButton)
     }
