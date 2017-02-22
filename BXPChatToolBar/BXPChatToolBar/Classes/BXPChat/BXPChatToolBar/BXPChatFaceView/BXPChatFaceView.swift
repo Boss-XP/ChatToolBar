@@ -102,9 +102,9 @@ class BXPChatFaceView: UIView, UICollectionViewDelegate, UICollectionViewDataSou
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = UICollectionViewScrollDirection.horizontal
-        layout.minimumLineSpacing = 0;//水平间距
-        layout.minimumInteritemSpacing = 0;//竖直间距
-        layout.sectionInset = UIEdgeInsetsMake(8, 10, 23, 10)//UIEdgeInsetsMake(10, 10, 8, 10);
+        layout.minimumLineSpacing = 0;
+        layout.minimumInteritemSpacing = 0;
+        layout.sectionInset = UIEdgeInsetsMake(8, 10, 23, 10)
 
         let tempCollectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
         tempCollectionView.backgroundColor = UIColor(red: 242/255.0, green: 244/255.0, blue: 248/255.0, alpha: 1.0)
