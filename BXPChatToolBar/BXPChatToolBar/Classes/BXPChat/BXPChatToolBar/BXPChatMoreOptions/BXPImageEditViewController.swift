@@ -92,7 +92,7 @@ class BXPImageEditViewController: UIViewController {
         originalLabel.font = UIFont.systemFont(ofSize: 16)
         originalLabel.textColor = UIColor.black
 
-        let imageDataLength = UIImagePNGRepresentation(sourceImage!)?.count
+        let imageDataLength = UIImageJPEGRepresentation(sourceImage!, 1.0)?.count//UIImagePNGRepresentation(sourceImage!)?.count
         
         var labelText: String = " "
         if (imageDataLength! / 1024) < 1024 {
