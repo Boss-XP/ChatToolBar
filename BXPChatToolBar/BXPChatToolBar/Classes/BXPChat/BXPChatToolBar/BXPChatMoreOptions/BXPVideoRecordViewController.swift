@@ -24,7 +24,7 @@ class BXPVideoRecordViewController: UIViewController, AVCaptureFileOutputRecordi
     private var thumbImage: UIImage?
     private var videoDuration: TimeInterval = 0
     
-    
+    private var isCancel = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -374,7 +374,7 @@ class BXPVideoRecordViewController: UIViewController, AVCaptureFileOutputRecordi
     // MARK: - AVCaptureFileOutputRecordingDelegate-录视频代理
     func capture(_ captureOutput: AVCaptureFileOutput!, didFinishRecordingToOutputFileAt outputFileURL: URL!, fromConnections connections: [Any]!, error: Error!) {
         
-        if isTimeTooShort {
+        if isTimeTooShort || isCancel {
             return
         }
         
@@ -430,6 +430,8 @@ class BXPVideoRecordViewController: UIViewController, AVCaptureFileOutputRecordi
         }
 //        print("开始录制：\(outputFilePath) ")
         fileOutput.startRecording(toOutputFileURL: outputURL as URL!, recordingDelegate: self)
+
+        isCancel = false
     }
 
     private func isCameraAuthorityOn() -> Bool {
@@ -526,8 +528,8 @@ class BXPVideoRecordViewController: UIViewController, AVCaptureFileOutputRecordi
     }
     
     func recordButtonTouchUpOutside() {
+        isCancel = true
         fileOutput.stopRecording()
-
         hideUpToCancelTipView()
     }
     
