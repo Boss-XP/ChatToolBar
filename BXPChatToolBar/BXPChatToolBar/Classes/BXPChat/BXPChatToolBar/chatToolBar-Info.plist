@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <key>NSContactsUsageDescription</key>
+    <string>ChatToolBar需要访问您的通讯录</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>ChatToolBar需要使用您的位置</string>
+    <key>NSLocationUsageDescription</key>
+    <string>ChatToolBar需要您的位置</string>
+    <key>NSLocationWhenInUseDescription</key>
+    <string>ChatToolBar需要使用您的位置</string>
+
+    
+    <key>NSCameraUsageDescription</key>
+    <string>ChatToolBar需要使用您的相机</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>ChatToolBar需要访问您的麦克风</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>ChatToolBar应用需要访问您的相册</string>
+</dict>
+</plist>
