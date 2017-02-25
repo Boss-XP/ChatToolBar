@@ -1,9 +1,7 @@
 # ChatToolBar
-一个swift写的聊天输入框控件,包括文字,表情,语音,图片,小视频等
-![image](https://github.com/Boss-XP/ChatToolBar/blob/master/images/iphone6s.png?raw=true)
-
+一个swift写的聊天输入框控件,包括文字,表情,语音,图片,小视频等,聊天框自适应键盘升降,根据输入文字表情自动调整输入框高度.
 ##文字输入
-![image](https://github.com/Boss-XP/ChatToolBar/blob/master/images/textInput.png)
+![image](https://github.com/Boss-XP/ChatToolBar/blob/master/images/textInput.png?raw=true)
 ##表情输入
 ![image](https://github.com/Boss-XP/ChatToolBar/blob/master/images/text-emoji-input.png)
 ##语音,图片,小视频输入,
