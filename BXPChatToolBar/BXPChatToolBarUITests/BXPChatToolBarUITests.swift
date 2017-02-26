@@ -2,7 +2,7 @@
 //  BXPChatToolBarUITests.swift
 //  BXPChatToolBarUITests
 //
-//  Created by Boos－XP on 17/2/22.
+//  Created by Boos－XP on 17/2/26.
 //  Copyright © 2017年 Boos－XP. All rights reserved.
 //
 

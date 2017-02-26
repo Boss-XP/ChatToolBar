@@ -261,8 +261,6 @@ class BXPChatMoreOptionView: UIView, UICollectionViewDelegate, UICollectionViewD
             showNoPermission(title: "打开相册失败", subTitle: "相册")
             return
         }
-        let switchmm = UISwitch(frame: CGRect(x: 10, y: 80, width: 50, height: 50))
-        AppDelegate.shareInstance().topViewController().view.addSubview(switchmm)
         
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
